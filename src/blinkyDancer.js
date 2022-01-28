@@ -21,16 +21,20 @@
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   // call the dancer superclass and pass in our arguments
   // extend the function to dance prototype
+  this.$node = $('<span class="blinky-dancer"></span>');
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.oldStep = this.step;
+  // save a copy of the old step function
+  this.oldStep = makeDancer.prototype.step;
+  console.log(this.setPosition);
+  this.setPosition(top, left);
+  this.step();
 };
-
-
 
 makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
 makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
 
 makeBlinkyDancer.prototype.step = function() {
+  console.log(this);
   this.$node.toggle();
   this.oldStep();
 };
