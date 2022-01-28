@@ -17,8 +17,7 @@ makeSpinnyDancer.prototype.step = function() {
   var styleSettings = {
     'border-color': 'blue',
     'border-bottom-color': 'red',
-    'transform': 'rotate(angle: 0, animateTo: 360)',
-
+    'animation': 'rotation 1s infinite linear'
   };
 
   this.$node.css(styleSettings);

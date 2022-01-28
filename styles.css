@@ -3,7 +3,10 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  /* background-color:#444; */
+  background-image: url('https://compote.slate.com/images/c86656e3-2cb5-45ec-8002-353605348484.gif?width=1200&rect=1560x1040&offset=0x0');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -33,7 +36,15 @@ body, a:link, a:visited, a:active{
 }
 
 
-@keyframes rotate {
+@keyframes rotation {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@keyframes mymove {
+  0%   { border-color: red;}
+  25%  { border-color: blue;}
+  50%  {border-color: yellow;}
+  75%  {border-color: green;}
+  100% {border-color: red;}
 }
