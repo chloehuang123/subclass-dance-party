@@ -5,7 +5,7 @@ var makeCandyDancer = function(top, left, timeBetweenSteps) {
   // save a copy of the old step function
   this.oldStep = makeDancer.prototype.step;
   this.$node.addClass('candy-dancer');
-  $('<img src="https://cdn-icons.flaticon.com/png/512/3692/premium/3692809.png?token=exp=1643420226~hmac=c3f2c4f2418c7104bd36abc17816c5b2"></img>').appendTo(this.$node);
+  $('<img src="https://cdn0.iconfinder.com/data/icons/christmas-3/500/ball_celebration_christmas_decoration_holiday_new_year_ornament_red-512.png"></img>').appendTo(this.$node);
   this.setPosition(top, left);
   this.step();
 };
