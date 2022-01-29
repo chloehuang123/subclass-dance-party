@@ -5,6 +5,8 @@ var makeSuperHeroDancer = function(top, left, timeBetweenSteps) {
   // this.$node = $('<span class="super-dancer"></span>');
   // save a copy of the old step function
   this.oldStep = makeDancer.prototype.step;
+  this.$node.addClass('candy-dancer');
+  $('<img src="https://cdn-icons-png.flaticon.com/512/3132/3132705.png"></img>').appendTo(this.$node);
   this.setPosition(top, left);
   this.step();
 };
