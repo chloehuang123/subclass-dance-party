@@ -13,22 +13,22 @@ body, a:link, a:visited, a:active{
   color: white;
 }
 
-.title, .addDancerButton{
+.title, .addDancerButton, .button{
   float:right;
   padding:.25em 1em;
   background-color: red;
   color:white;
   text-decoration: none;
 }
-.addDancerButton{
+.addDancerButton, .button{
   border-radius: .5em;
   margin:0 .5em 0 .5em;
 }
-.addDancerButton:hover{
+.addDancerButton, .button:hover{
   background-color: rgb(121, 0, 0);
   border: 2px solid white;
 }
-.addDancerButton:active{
+.addDancerButton, .button:active{
   background-color: rgb(170, 49, 49);
   border-color:rgb(204, 204, 204);
 }
