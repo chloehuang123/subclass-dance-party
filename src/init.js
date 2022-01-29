@@ -34,13 +34,12 @@ $(document).ready(function() {
 
   // line up event handler -  lineUp
   $('.lineUp').on('click', function (event) {
-    var t = 10;
+    var t = 20;
     for (var i = 0; i < window.dancers.length; i++) {
-      window.dancers[i].css({left: 0, top: `${t}px`});
+      window.dancers[i].css({left: '10px', top: `${t}px`});
       t += 50;
     }
   });
-
 
 });
 
