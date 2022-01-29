@@ -31,6 +31,17 @@ $(document).ready(function() {
     window.dancers.push(dancer.$node);
     $('#dance-floor').append(dancer.$node);
   });
+
+  // line up event handler -  lineUp
+  $('.lineUp').on('click', function (event) {
+    var t = 10;
+    for (var i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].css({left: 0, top: `${t}px`});
+      t += 50;
+    }
+  });
+
+
 });
 
 
